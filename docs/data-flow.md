@@ -287,7 +287,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A([Client: POST /agent/stream\n{ query, history }]) --> B
+    A(["Client: POST /agent/stream\n{ query, history }"]) --> B
 
     B["AgentOrchestrator.run()\n• Build system prompt\n  (native tool-call or fallback)\n• Inject available tools list"]
 
@@ -326,7 +326,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A([POST /memory/extract\n{ file_id, user_id }]) --> B
+    A(["POST /memory/extract\n{ file_id, user_id }"]) --> B
 
     B["MemoryService\n• Load file chunks from SQLite\n• Apply chunking strategy\n  (original chunks or re-chunk)"]
 
